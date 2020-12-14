@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Landing page with links in the navigation bar. -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- That's how they make pages responsive.-->
+        <meta name="viewport" content="width=device-width">
+
+        <!-- An attempt at SEO: -->
+        <meta name="description" content="Basic homepage for basic needs.">
+        <meta name="keywords" content="Learning programming, webdev foundations">
+
+        <!-- Bootstrap-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <!-- Defer to load in order, async to just load asap. Ain't really relevant here though.-->
+        <script src="script.js" defer></script>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>
+            <!-- Making sure there is space to the sides. -->
+            <div id="walls">
+                <div id="logo">
+                    <h2>Huh, it's a website</h2>
+                </div>
+                <nav>
+                    <!-- Using unordered list for menu.-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="landing">
+            <div id="walls">
+              <!-- The idea is to switch </> to <3 with javascript-->
+                <h2> Here could be a blog, but isnt.</h2>
+            </div>
+        </section>
+
+        <footer>
+          <p>Powered by lots of googling.</p>
+        </footer>
+    </body>
+</html>

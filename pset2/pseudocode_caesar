@@ -1,0 +1,18 @@
+We need to write a cipher that shifts letters.
+
+First we shouldnt be using main void, instead it should be using command line arguments.
+
+The only argument it should accept is a positive integer and if it doesnt get a positive integer
+it should prompt for a key
+use int isdigit(int c) and strlen
+
+once it has a key it should ask for a text line
+
+probably via get string
+
+then this string should be dealt with as tho it is an aarray of characters
+
+then we will add the number so that it cycles through the alphabet using ci = (pi + k) % 26
+
+upper cases and lower cases should be handles separately
+and if there is a non letter it should be printed as is.

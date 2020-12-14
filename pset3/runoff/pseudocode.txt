@@ -1,0 +1,40 @@
+{
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (strcmp(name, candidates[i].name) == 0) // Comparing candidate name to the list.
+        {
+            candidates[i].votes = candidates[i].votes + 1;
+            //printf ("Current votes for %s are %i\n", candidates[i].name, candidates[i].votes);
+            return true;
+        }
+    }
+    printf("Invalid vote.\n");
+    return false;
+}
+
+
+print winner:
+
+  int maxVotes = 0;
+
+    for (int i = 0; i < candidate_count; i++) // Sorting.
+    {
+        if (maxVotes < candidates[i].votes)
+        {
+            maxVotes = candidates[i].votes;
+        }
+    }
+
+    for (int i = 0; i < candidate_count; i++) // Announcing the winner.
+    {
+        if (maxVotes == candidates[i].votes)
+        {
+            printf("%s\n", candidates[i].name);
+        }
+
+        else
+        {
+            printf("");
+        }
+    }
+

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        <h1>Registrants</h1>
+        <ul>
+            <!-- looping through the dictionary and accessing values via keys -->
+            {% for row in rows %}
+            <li> {{ row["name"]}}, {{ row["email"] }} </li>
+            {% endfor %}
+        </ul>
+        <!-- a link, that will allow users to register -->
+        <a href="/register">Register</a>
+{% endblock %}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- Landing page with links in the navigation bar. -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- That's how they make pages responsive.-->
+        <meta name="viewport" content="width=device-width">
+
+        <!-- An attempt at SEO: -->
+        <meta name="description" content="Basic homepage for basic needs.">
+        <meta name="keywords" content="Learning programming, webdev foundations">
+
+        <!-- Bootstrap-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <!-- Defer to load in order, async to just load asap. Ain't really relevant here though.-->
+        <script src="script.js" defer></script>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>
+            <!-- Making sure there is space to the sides. -->
+            <div id="walls">
+                <div id="logo">
+                    <h2>Huh, it's a website</h2>
+                </div>
+                <nav>
+                    <!-- Using unordered list for menu.-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="landing">
+            <div id="walls">
+              <!-- The idea is to switch </> to <3 with javascript-->
+                <h2> How I stopped worrying and learned to love the code.</h2>
+                <h1 id="slashtag" onmouseover="change_of_heart('&lt;3')" onmouseout="change_back('&lt; / &gt;')"> &lt; / &gt;</h1>
+            </div>
+        </section>
+
+        <!--Adding in a bootstrap component as per specification-->
+        <section id="skills">
+            <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Javascript</h3>
+                <p class="card-text">Javascript was used on this page to animate the code symbol transition.
+                  The main task of Javascript here is to make the webpage interactive and not as static (as it would be otherwise).
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">CSS3</h3>
+                <p class="card-text">CSS3 was used for styling of this page. The html is connected to the CSS via a file link.
+                  The CSS file itself knows what to edit thanks to the HTML ids and classes inside of the HTML tags.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">HTML5</h3>
+                <p class="card-text">HTML5 gave this page the basic structure and linking. The main structure consists of the header and the body,
+                  but these have lots of different sub-tags and sub-structures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p>Powered by lots of googling.</p>
+        </footer>
+    </body>
+</html>

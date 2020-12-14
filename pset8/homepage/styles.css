@@ -1,0 +1,99 @@
+body {
+    font-size: 1.5rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    line-height: 1.3;
+    background-color: #364a57;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#walls {
+    /*Aligning everything to the center and cutting the text */
+    width: 75%;
+    margin: auto;
+    overflow: hidden; /* So no scrollbar appears */
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #eddec9;
+    background-color: #364a57;
+    /* border-top: #3b242d 8px solid;
+    border-bottom: #3b242d 8px solid;
+    */
+}
+/* All <a> tags in the header for different states: */
+header a:link,
+a:visited {
+    font-size: 2rem;
+    color: #eddec9;
+    text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+}
+header a:active,
+a:hover {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eddec9;
+    text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+header li {
+    /* From left to right, but will push the nav to the right*/
+    float: left;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header #logo {
+    font-size: 3rem;
+    color: #eddec9;
+    float: left;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav {
+    float: right;
+}
+#landing {
+    min-height: 350px;
+    font-size: 2rem;
+    padding-top: 35px;
+    text-align: center;
+    color: #eddec9;
+    background-color: #92493c;
+}
+h1 {
+    padding-top: 30px;
+    font-size: 9rem;
+    font-weight: bold;
+}
+.card-body {
+    color: #eddec9;
+    background-color: #364a57;
+    text-align: center;
+}
+footer {
+    padding-top: 50px;
+    font-size: smaller;
+    color: #eddec9;
+    background-color: #364a57;
+    text-align: center;
+}
+.card-body h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+}
+.card {
+    border-width: 12px;
+    border-color: #92493c;
+}

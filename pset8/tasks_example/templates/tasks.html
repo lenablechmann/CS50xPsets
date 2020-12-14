@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Tasks</h1>
+    <ul>
+        <!-- This file now gets the todos variable
+             So we can loop over the todo list with jinja
+             and create a new list item for each-->
+        {% for todo in todos %}
+            <li>{{ todo }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/add">Create a new task</a>
+{% endblock %}

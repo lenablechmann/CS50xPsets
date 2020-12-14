@@ -1,0 +1,23 @@
+we need  index = 0.0588 * L - 0.296 * S - 15.8
+
+letters
+int isalpha(int c)
+checks if char is alphanumeric
+ if( isalpha(var) )
+
+ can write a separate function that counts letters.
+
+words
+The C library function int isspace(char c) checks whether the passed character is white-space.
+
+sentences
+
+
+counted.
+
+Then we calculate the average letters and sentences per 100 words.
+
+Then round the score to an int.
+
+if its less than 1 then before grade 1
+and grade 16+
